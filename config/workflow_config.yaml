@@ -1,0 +1,47 @@
+# AI Agent System - Workflow Configuration
+
+workflows:
+  web_application:
+    name: "Web Application Workflow"
+    agents:
+      - business_analyzer      # STOP TOGGLE PLAN TO ACTIVATE ACT MODE
+      - backend_developer      # parallel
+      - frontend_developer     # parallel
+      - integration_engineer
+      - testing_engineer
+      - deployment_engineer
+      - security_engineer
+    description: "For web apps with server backend"
+
+  desktop_application:
+    name: "Desktop Application Workflow"
+    agents:
+      - business_analyzer     # STOP TOGGLE PLAN TO ACTIVATE ACT MODE
+      - software_developer
+      - testing_engineer
+      - deployment_engineer
+      - security_engineer
+    description: "For standalone desktop apps"
+
+  mobile_application:
+    name: "Mobile Application Workflow"
+    agents:
+      - business_analyzer     # STOP TOGGLE PLAN TO ACTIVATE ACT MODE
+      - software_developer
+      - testing_engineer
+      - deployment_engineer
+      - security_engineer
+    description: "For iOS/Android apps"
+
+  hybrid_application:
+    name: "Hybrid Application Workflow"
+    agents:
+      - business_analyzer     # STOP TOGGLE PLAN TO ACTIVATE ACT MODE
+      - backend_developer      # parallel
+      - frontend_developer     # parallel
+      - software_developer
+      - integration_engineer
+      - testing_engineer
+      - deployment_engineer
+      - security_engineer
+    description: "For multi-platform apps (needs both web and desktop/mobile components)"

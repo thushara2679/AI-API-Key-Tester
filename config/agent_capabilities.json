@@ -1,0 +1,160 @@
+{
+  "version": "1.0.0",
+  "agents": {
+    "business_analyzer": {
+      "id": "01",
+      "name": "Business Analyzer",
+      "role": "Requirements & Architecture",
+      "techniques_count": 150,
+      "primary_outputs": [
+        "business_requirements_document",
+        "system_architecture",
+        "api_contracts",
+        "database_schema"
+      ],
+      "knowledge_areas": [
+        "requirements_engineering",
+        "system_architecture",
+        "data_modeling",
+        "api_design"
+      ]
+    },
+    "backend_developer": {
+      "id": "02",
+      "name": "Backend Developer",
+      "role": "Server-Side Development",
+      "techniques_count": 300,
+      "primary_outputs": [
+        "rest_api",
+        "graphql_api",
+        "database_implementation",
+        "microservices"
+      ],
+      "knowledge_areas": [
+        "python_development",
+        "nodejs_development",
+        "database_optimization",
+        "api_development"
+      ]
+    },
+    "frontend_developer": {
+      "id": "03",
+      "name": "Frontend Developer",
+      "role": "Client-Side Development",
+      "techniques_count": 200,
+      "primary_outputs": [
+        "web_application",
+        "progressive_web_app",
+        "component_library",
+        "responsive_ui"
+      ],
+      "knowledge_areas": [
+        "react_development",
+        "vue_development",
+        "state_management",
+        "performance_optimization"
+      ]
+    },
+    "integration_engineer": {
+      "id": "04",
+      "name": "Integration Engineer",
+      "role": "System Integration",
+      "techniques_count": 150,
+      "primary_outputs": [
+        "integrated_system",
+        "api_gateway",
+        "message_queues",
+        "real_time_communication"
+      ],
+      "knowledge_areas": [
+        "api_integration",
+        "websocket_implementation",
+        "third_party_services",
+        "data_synchronization"
+      ]
+    },
+    "software_developer": {
+      "id": "05",
+      "name": "Software Developer",
+      "role": "Desktop/Mobile Development",
+      "techniques_count": 150,
+      "primary_outputs": [
+        "mobile_app_ios",
+        "mobile_app_android",
+        "desktop_application",
+        "cross_platform_app"
+      ],
+      "knowledge_areas": [
+        "react_native",
+        "flutter",
+        "electron",
+        "native_development"
+      ]
+    },
+    "testing_engineer": {
+      "id": "06",
+      "name": "Testing Engineer",
+      "role": "Quality Assurance",
+      "techniques_count": 150,
+      "primary_outputs": [
+        "test_suite",
+        "test_reports",
+        "quality_metrics",
+        "automation_framework"
+      ],
+      "knowledge_areas": [
+        "unit_testing",
+        "integration_testing",
+        "e2e_testing",
+        "performance_testing"
+      ]
+    },
+    "deployment_engineer": {
+      "id": "07",
+      "name": "Deployment Engineer",
+      "role": "DevOps & Infrastructure",
+      "techniques_count": 100,
+      "primary_outputs": [
+        "ci_cd_pipeline",
+        "infrastructure_as_code",
+        "monitoring_setup",
+        "deployment_automation"
+      ],
+      "knowledge_areas": [
+        "containerization",
+        "kubernetes",
+        "cloud_platforms",
+        "monitoring"
+      ]
+    },
+    "security_engineer": {
+      "id": "08",
+      "name": "Security Engineer",
+      "role": "Cybersecurity & Compliance",
+      "techniques_count": 200,
+      "primary_outputs": [
+        "security_report",
+        "penetration_test_results",
+        "compliance_certification",
+        "incident_response_plan"
+      ],
+      "knowledge_areas": [
+        "vulnerability_assessment",
+        "penetration_testing",
+        "secure_coding",
+        "compliance"
+      ]
+    }
+  },
+  "workflow_sequence": [
+    "business_analyzer",
+    "backend_developer",
+    "frontend_developer",
+    "integration_engineer",
+    "software_developer",
+    "testing_engineer",
+    "deployment_engineer",
+    "security_engineer"
+  ],
+  "total_techniques": 1200
+}

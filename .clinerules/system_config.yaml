@@ -1,0 +1,57 @@
+system:
+  # Enhanced mode protection to prevent ACT mode override
+  mode_protection:
+    enabled: true
+    act_mode_requires_approval: true
+    allow_emergency_override: false  # Disable user mode switch override
+    prevent_automatic_transitions: true  # NEW: Explicitly block automatic mode switches
+    require_manual_confirmation: true    # NEW: Force manual ACT mode activation only
+    lock_plan_mode_until_approval: true  # NEW: Keep in PLAN mode until explicit approval
+
+  # Stakeholder confirmation requirements
+  stakeholder_confirmation:
+    require_explicit_yes_proceed: true
+    wait_for_all_answers: true
+    prevent_auto_execution: true
+    question_timeout: 3600  # 1 hour in seconds
+    mandatory_pre_execution_check: true  # NEW: Block any tool execution without approval
+    force_plan_mode_persistence: true     # NEW: Prevent any automatic progression
+
+  # Emergency protocols (for administrators only)
+  emergency_protocols:
+    admin_override: false
+    emergency_execution: false
+    bypass_confirmation: false
+    require_admin_password: true
+
+  # Agent execution safety
+  agent_execution:
+    require_protocols_complete: true
+    log_violations: true
+    prevent_rushed_execution: true
+
+  # User experience settings
+  ux:
+    show_status_indicators: true
+    display_protection_warnings: true
+    allow_mode_switch_override: false
+
+  # Monitoring and metrics
+  monitoring:
+    track_protocol_completions: true
+    log_mode_switch_attempts: true
+    measure_waiting_times: true
+
+# Risk mitigation settings
+risk_mitigation:
+  quality_protection:
+    prevent_implementation_without_analysis: true
+    require_business_approval: true
+
+  performance_protection:
+    prevent_overload_execution: true
+    limit_concurrent_agents: 3
+
+  security_protection:
+    verify_environment_safety: true
+    prevent_unsafe_mode_switches: true
